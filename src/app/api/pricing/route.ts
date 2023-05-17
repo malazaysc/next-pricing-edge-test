@@ -1,9 +1,9 @@
 import { InterfacePriceData } from '@/components/types/Pricing.interface';
 import { calculatePrice } from '../../../price/getPrice';
 
-export const config = {
-    runtime: 'edge', // this is a pre-requisite
-  };
+export const runtime = 'edge';
+
+export const preferredRegion = 'auto';
 
 interface BodyInterface extends InterfacePriceData {
     id: string
